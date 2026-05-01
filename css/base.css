@@ -1,0 +1,40 @@
+.font-base{
+    font-family:"Rubik", sans-serif;
+}
+.main-bg{
+    background: url(../img/hero.png) center/cover;
+    height: 50vh;
+}
+.promo{
+    background: url(../img/ração.png) center/cover;
+    height: 40vh;
+}
+@media(min-width:768px){
+    .promo{
+        background: url(../img/ração-md.png) center/cover;
+        height: 80vh;
+    }
+}
+
+
+.bg-gradiente{
+   background: linear-gradient(
+  135deg,
+  #dbeafe 0%, 
+  #ffffff 50%,  
+  #fbcfe8 100%  
+);
+}
+.nav-bg{
+    background: linear-gradient(
+  135deg,
+  #dbeafe 0%, 
+  #ffffff 50%, 
+  #fbcfe8 100%  
+  );
+}
+@media(min-width:768px){
+    .nav-bg{
+        background-image: none;
+    }
+};

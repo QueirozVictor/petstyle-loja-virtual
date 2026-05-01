@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Pet&Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+<body class=" font-base">
+    <header class="relative flex justify-between bg-blue-400 py-2 px-2 md:flex-col-reverse">
+        <div>
+            <nav class="flex">
+            
+                <button id="menu-btn" class="self-center text-4xl rounded-md hover:bg-blue-300 p-1 md:hidden m-1 cursor-pointer">☰</button>
+                <ul id="menu" class="absolute hidden left-0 top-full w-full nav-bg flex flex-col p-4  md:flex md:flex-row md:justify-between md:bg-blue-none md:text-white md:text-lg md:font-bold md:static">
+                    <li class="py-2">
+                        <a href="" class="text-3xl  md:hidden">Shop</a>
+                    </li>
+                    <li class="flex justify-between py-2">
+                        <a href="" class="flex justify-between text-2xl   w-full group md:text-xl">
+                            <span class="group-hover:underline">Cachorro</span>
+                            <span class="md:hidden">&gt;</span>
+                            <span class="hidden md:inline">▾</span>
+                        </a></li><hr>
+                    <li class="py-3">
+                        <a href="" class="flex justify-between text-2xl group w-full md:text-xl">
+                            <span class="group-hover:underline">Gato</span>
+                            <span class="md:hidden">&gt;</span>
+                            <span class="hidden md:inline">▾</span>
+                        </a>
+                    </li><hr>
+                    <li class="py-3">
+                        <a href="" class="flex justify-between text-2xl group w-full md:text-xl">
+                            <span class="group-hover:underline">Outros Animais</span>
+                            <span class="md:hidden">&gt;</span>
+                            <span class="hidden md:inline">▾</span>
+                        </a>
+                    </li><hr>
+                    <li class="py-3">
+                        <a href="" class="flex justify-between text-2xl group w-full md:text-xl">
+                            <span class="group-hover:underline">Pais de Pet</span>
+                            <span class="md:hidden">&gt;</span>
+                            <span class="hidden md:inline">▾</span>
+                        </a>
+                    </li><hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex">
+                <div class="flex relative">
+                    <input type="text" placeholder="Search" class="bg-white border-2 border-blue-700 rounded-xl self-center px-4 py-2 w-44 sm:w-64 md:w-100 lg:w-150">
+                    <span class="absolute left-35 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer sm:left-55 md:left-92 lg:left-140">
+                        <img src="img/search (1).png" alt="buscar" class="w-5">
+                    </span>
+                </div>
+            </div>
+            <div class="flex gap-5 px-2 md:gap-10">
+                <a href="" class="self-center"><img src="img/user.png" alt="cart" class="w-9"></a>
+                <a href="" class="self-center"><img src="img/sell.png" alt="cart" class="w-10"></a>
+                <img src="img/logo.png" alt="logo" class="w-30 self-center">
+            </div>
+        </div>
+    </header>
+    <main class="p-2 bg-gradiente">
+
+        <div class="main-bg flex flex-col justify-end py-2 px-2 mt-2 rounded-md border-1 border-pink-500">
+            <img src="img/logo.png" alt="logo" class="w-30 self-end">
+        </div>
+
+        <div>
+            <p class="bg-gradiente text-center text-xl text-pink-500 font-bold p-2 mt-2 rounded-md border-2 border-blue-500 ">Aqui você encontra tudo que nossos melhores amigos precisam!</p>
+        </div>
+
+        <Div class="promo flex mt-2 rounded-md border-2 border-pink-500">
+            <h2 class="text-blue-700 text-5xl text-center font-medium p-4 md:text-8xl">NutriPet <br> Adulto</h2>
+        </Div>
+        <!--Produtos-->
+        <section class="flex flex-col p-1 mt-2">
+            <h2 class="text-4xl text-pink-700 font-bold text-center p-4">Produtos em destaque</h2>
+
+            <div class="grid grid-cols-2 justify-items-center gap-5 lg:grid-cols-4 p-5">
+                <div class="flex flex-col items-center rounded-md border-3 border-blue-500 w-50">
+
+                        <div class="flex justify-center border-b-2 border-pink-500 w-full items-center">
+                            <img src="img/produto1.png" alt="produto1" class="">
+                        </div>
+
+                        <div class="bg-white p-2 w-full hover:bg-blue-100">
+                            <a href="">
+                                <h3 class="text-center text-lg font-semibold">NutriPet Gatos</h3>
+                            </a>
+                        </div>
+
+                </div>
+
+                <div class="flex flex-col items-center rounded-md border-3 border-blue-500 w-50">
+
+                    <div class="flex justify-center border-b-2 border-pink-500 w-full items-center">
+                        <img src="img/produto2.png" alt="produto1" class="">
+                    </div>
+
+                    <div class="bg-white p-2 w-full h-full hover:bg-blue-100">
+                        <a href="">
+                            <h3 class="text-center text-lg font-semibold">Shampoo Premium</h3>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center rounded-md border-3 border-blue-500 w-50">
+
+                    <div class="flex justify-center border-b-2 border-pink-500 w-full items-center">
+                        <img src="img/produto3.png" alt="produto1" class="">
+                    </div>
+
+                    <div class="bg-white p-2 w-full h-full hover:bg-blue-100">
+                        <a href="">
+                            <h3 class="text-center text-lg font-semibold">Brinquedos</h3>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center rounded-md border-3 border-blue-500 w-50">
+
+                    <div class="flex justify-center border-b-2 border-pink-500 w-full items-center">
+                        <img src="img/produto4.png" alt="produto1" class="">
+                    </div>
+
+                    <div class="bg-white p-2 w-full h-full hover:bg-blue-100">
+                        <a href="" class="">
+                            <h3 class="text-center text-lg font-semibold ">NutriPet Filhotes</h3>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+        </section>
+
+<!--Depoimentos-->
+        <section>
+             <h2 class="text-3xl text-center text-pink-700 font-bold mt-4">Oque nossos clientes dizem</h2>
+            <artique class="md:flex gap-2">
+                <div class="bg-gradiente flex flex-col justify-center h-35 mt-4 rounded-md border-2 border-blue-500 md:w-1/2">
+                   <p class="text-lg p-4 text-center text-pink-500 font-medium">
+                    “Atendimento excelente e produtos de muita qualidade. Meu cachorro adorou a ração nova!”</p>
+                    <p class="text-end px-8 text-pink-500 text-lg">Ana S.</p>
+                </div>
+                <div class="bg-gradiente flex flex-col justify-center h-35 mt-4 rounded-md border-2 border-blue-500 md:w-1/2">
+                   <p class="text-lg p-4 text-center text-pink-500 font-medium">
+                    “Comprei brinquedos e chegaram super rápido. Dá pra ver o cuidado com os clientes.”</p>
+                    <p class="text-end px-8 text-pink-500 text-lg">Lucas M.</p>
+                </div>
+            </artique>
+
+            <article class="md:flex gap-2">
+                <div class="bg-gradiente flex flex-col justify-center h-35 mt-4 rounded-md border-2 border-blue-500 md:w-1/2">
+                   <p class="text-lg p-4 text-center text-pink-500 font-medium">
+                    “Melhor petshop que já encontrei! Tudo organizado e com ótimas opções para pets.”</p>
+                    <p class="text-end px-8 text-pink-500 text-lg">Sully O.</p>
+                </div>
+                <div class="bg-gradiente flex flex-col justify-center h-35 mt-4 rounded-md border-2 border-blue-500 md:w-1/2">
+                   <p class="text-lg p-4 text-center text-pink-500 font-medium">
+                    “Serviço de alta qualidade no cuidado com meu Pet.”</p>
+                    <p class="text-end px-8 text-pink-500 text-lg">Adam N.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--Contato-->
+    <footer class=" flex flex-col bg-gradiente ">
+        <div class="flex flex-col text-center md:text-start md:flex-row md:justify-between py-8 px-2">
+            <h2 class="text-3xl font-bold text-blue-700">Contato</h2>
+                <div class="flex gap-2 items-center text-lg font-bold text-blue-700 justify-center">
+                    <h3>Email:</h3>
+                    <p>pet&style@myemail.com</p>
+                </div>
+                <div class="flex gap-2 items-center text-lg font-bold text-blue-700 justify-center">
+                    <h3>Tel:</h3>
+                    <p>(11)91234-5678</p>
+                </div>
+        </div>
+        <section >
+                <h2 class="text-3xl text-center text-pink-700 font-bold mt-4 py-5">Fique por dentro das novidades</h2>
+                <form action="" class="flex flex-col items-center gap-4 p-2 md:flex-row md:justify-center">
+                    <input type="text" placeholder="Digite seu email" class="bg-white border-2 border-blue-700 rounded-xl self-center px-4 py-2 w-60 sm:w-84 md:w-100 lg:w-150">
+
+                    <input type="text" placeholder="Digite seu email" class="bg-white border-2 border-blue-700 rounded-xl self-center px-4 py-2 w-60 sm:w-84 md:w-100 lg:w-150" >
+                    <button class="bg-blue-400 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-500 w-60 sm:w-84">Enviar</button>
+                </form>
+                <div class="flex justify-between items-center mt-4 px-3">
+                    <a href=""><img src="img/instagram.png" alt="intagram" class="w-10 mx-4"></a>
+                    <a href=""><img src="img/facebook.png" alt="facebook" class="w-10 mx-4"></a>
+                    <a href=""><img src="img/whatsapp.png" alt="whatsapp" class="w-10 mx-4"></a>
+                </div>
+        </section>
+        <p class="bg-blue-400 text-center text-lg text-white py-5 mt-5">© 2026 Pet&Style. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
