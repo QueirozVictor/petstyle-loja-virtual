@@ -9,7 +9,7 @@
     background: url(../img/ração.png) center/cover;
     height: 40vh;
 }
-@media(min-width:768px){
+@media(min-width:1025px){
     .promo{
         background: url(../img/ração-md.png) center/cover;
         height: 80vh;
